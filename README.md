@@ -11,7 +11,7 @@ $\textbf{step 2}$ for $32$ possible rotations (including the current one), calcu
 
 $\textbf{step 3}$ choose $S^{th}$ proposal with 
 ```math
-P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s) = \frac{E_s^{-1}}{{\sum_{r = 1 \& r\neq c}^{32}} E_r^{-1}}.
+P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s) = \frac{E_s^{-1}}{{\sum E_r^{-1}}.
 ```
 $\textbf{step 4}$ MCMC algorithm, choose the proposal or not based on
 ```math
