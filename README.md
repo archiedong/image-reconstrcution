@@ -6,11 +6,23 @@ Ever since the paper shredder was invented, people have worked on retrieving the
 
 ## Methodology
 $\textbf{step 1}$ choose two patches with $p = \frac{1}{n}$, where $n$ is the total number of shredders.
-$\textbf{step 2}$ for $32$ possible rotations (including the current one), calculate $E_r = \sum_r \be_i^\top \be_i, r = 1, \ldots, 32$.
+
+$\textbf{step 2}$ for $32$ possible rotations (including the current one), calculate $E_r = \sum_r e_i^\top e_i, r = 1, \ldots, 32$.
+
 $\textbf{step 3}$ choose $S^{th}$ proposal with $P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s) = \frac{E_s^{-1}}{\sum_{r = 1 \& r\neq c}^{32} E_r^{-1}}$.
-$\textbf{step 4}$ MCMC algorithm, choose the proposal or not based on $min\Big(1, \frac{P_r(\tilde{Z}_s \rightarrow \tilde{Z}_c)}{P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s)} \cdot \frac{\pi(\tilde{Z}_s|\by)}{\pi(\tilde{Z}_c|\by)}\Big)$, where $\pi(Z|\by) = \frac{\pi(Z \cdot \by)}{\pi(\by)} = \frac{\pi(Z) \cdot \pi(\by|Z) } {\pi(\by)}$. After validation, the closest form of $\pi$ is the Gamma distribution. Then the MCMC algorithm becomes \small
- {$$min\bigg(1, \frac{E_c^{-1} \cdot \sum_{r \neq c}^{32} E_r^{-1}} {E_s^{-1} \cdot \sum_{r \neq s}^{32} E_r^{-1}} \cdot \exp \Big(\sum \log(Gamma_{\alpha, \beta} (\be_i^2|\tilde{Z}_s)) - \sum \log(Gamma_{\alpha, \beta} (\be_i^2|\tilde{Z}_c)) \Big)  \bigg)$$} \normalsize
+
+$\textbf{step 4}$ MCMC algorithm, choose the proposal or not based on
+```math
+$min\Big(1, \frac{P_r(\tilde{Z}_s \rightarrow \tilde{Z}_c)}{P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s)} \cdot \frac{\pi(\tilde{Z}_s|\by)}{\pi(\tilde{Z}_c|\by)}\Big)$
+```
+where $\pi(Z|\by) = \frac{\pi(Z \cdot \by)}{\pi(\by)} = \frac{\pi(Z) \cdot \pi(\by|Z) } {\pi(\by)}$.
+After validation, the closest form of $\pi$ is the Gamma distribution. Then the MCMC algorithm becomes \small
+```math
+ {$$min\bigg(1, \frac{E_c^{-1} \cdot \sum_{r \neq c}^{32} E_r^{-1}} {E_s^{-1} \cdot \sum_{r \neq s}^{32} E_r^{-1}} \cdot \exp \Big(\sum \log(Gamma_{\alpha, \beta} (\be_i^2|\tilde{Z}_s)) - \sum \log(Gamma_{\alpha, \beta} (\be_i^2|\tilde{Z}_c)) \Big)  \bigg)
+ ```
+ 
  $\textbf{step 5}$ If the proposal accepted, update the parameter of $Gamma$ distribution.
-  $ \textbf{step 6}$ After some burning time, if the status doesn't change or alomost stationary. Take it as the final ststus.
+ 
+ $ \textbf{step 6}$ After some burning time, if the status doesn't change or alomost stationary. Take it as the final ststus.
 
 
