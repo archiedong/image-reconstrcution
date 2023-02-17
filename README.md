@@ -20,7 +20,7 @@ $min\Big(1, \frac{P_r(\tilde{Z}_s \rightarrow \tilde{Z}_c)}{P_r(\tilde{Z}_c \rig
 where $\pi(Z|y) = \frac{\pi(Z \cdot y)}{\pi(y)} = \frac{\pi(Z) \cdot \pi(y|Z) } {\pi(y)}$.
 After validation, the closest form of $\pi$ is the Gamma distribution. Then the MCMC algorithm becomes
 ```math
- {$$min\bigg(1, \frac{E_c^{-1} \cdot \sum_{r \neq c}^{32} E_r^{-1}} {E_s^{-1} \cdot \sum_{r \neq s}^{32} E_r^{-1}} \cdot \exp \Big(\sum \log(\Gamma_{\alpha, \beta} (e_i^2|\tilde{Z}_s)) - \sum \log(\Gamma_{\alpha, \beta} (e_i^2|\tilde{Z}_c)) \Big)  \bigg)
+ {$$min\bigg(1, \frac{E_c^{-1} \cdot \sum_{r \neq c} E_r^{-1}} {E_s^{-1} \cdot \sum_{r \neq s} E_r^{-1}} \cdot \exp \Big(\sum \log(\Gamma_{\alpha, \beta} (e_i^2|\tilde{Z}_s)) - \sum \log(\Gamma_{\alpha, \beta} (e_i^2|\tilde{Z}_c)) \Big)  \bigg)
  ```
  
  $\textbf{step 5}$ If the proposal accepted, update the parameter of $Gamma$ distribution.
