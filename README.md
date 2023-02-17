@@ -6,7 +6,6 @@ Ever since the paper shredder was invented, people have worked on retrieving the
 
 ## Methodology
 ```math
-\begin{itemize}
 	\item \textbf{step 1} choose two patches with $p = \frac{1}{n}$, where $n$ is the total number of shredders.
   \item \textbf{step 2} for $32$ possible rotations (including the current one), calculate $E_r = \sum_r \be_i^\top \be_i, r = 1, \ldots, 32$.
   \item  \textbf{step 3} choose $S^{th}$ proposal with $P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s) = \frac{E_s^{-1}}{\sum_{r = 1 \& r\neq c}^{32} E_r^{-1}}$.
@@ -14,6 +13,5 @@ Ever since the paper shredder was invented, people have worked on retrieving the
  {$$min\bigg(1, \frac{E_c^{-1} \cdot \sum_{r \neq c}^{32} E_r^{-1}} {E_s^{-1} \cdot \sum_{r \neq s}^{32} E_r^{-1}} \cdot \exp \Big(\sum \log(Gamma_{\alpha, \beta} (\be_i^2|\tilde{Z}_s)) - \sum \log(Gamma_{\alpha, \beta} (\be_i^2|\tilde{Z}_c)) \Big)  \bigg)$$} \normalsize
  \item \textbf{step 5} If the proposal accepted, update the parameter of $Gamma$ distribution.
   \item \textbf{step 6} After some burning time, if the status doesn't change or alomost stationary. Take it as the final ststus.
-\end{itemize}
 ```
 
