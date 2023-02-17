@@ -30,3 +30,7 @@ After validation, the closest form of $\pi$ is the Gamma distribution. Then the 
 ## Experiments results
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZiMTU1Mjc3OWFiNjQxN2UxZDg3YjliYmNiNTNiMWRlOTdmMzg0NCZjdD1n/kU2Ji6KDfgz1BKVlxZ/giphy.gif)
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/60518209/219530257-e6f7ffe3-8e26-4508-b62c-fe15f7ecb751.png" width="230" />
+  <img src="https://user-images.githubusercontent.com/60518209/219530272-8b965a5e-f570-413e-9461-dd9023ce9055.png" width="230" />
+</p>
