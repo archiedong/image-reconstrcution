@@ -23,8 +23,8 @@ After validation, the closest form of $\pi$ is the Gamma distribution. Then the 
  {$$min\bigg(1, \frac{E_c^{-1} \cdot \sum_{r \neq c} E_r^{-1}} {E_s^{-1} \cdot \sum_{r \neq s} E_r^{-1}} \cdot \exp \Big(\sum \log(\Gamma_{\alpha, \beta} (e_i^2|\tilde{Z}_s)) - \sum \log(\Gamma_{\alpha, \beta} (e_i^2|\tilde{Z}_c)) \Big)  \bigg)
  ```
  
- $\textbf{step 5}$ If the proposal accepted, update the parameter of $Gamma$ distribution.
+ $\textbf{step 5}$ If the proposal accepted, update the parameter of $\Gamma$ distribution.
  
- $ \textbf{step 6}$ After some burning time, if the status doesn't change or alomost stationary. Take it as the final ststus.
+ $\textbf{step 6}$ After some burning time, if the status doesn't change or alomost stationary. Take it as the final ststus.
 
 
