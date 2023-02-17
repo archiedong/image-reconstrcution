@@ -41,4 +41,13 @@ The document is shredded to $8 \times 6$ patches with edge fixed. The results ar
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjc4YTFkMjQwZjg1MGRkODFjNWFjZmFhNmEwYzRiMmIzZWRkY2JiMyZjdD1n/qCIfJ47WuJlehhlRLP/giphy.gif)
 
+## Optimization
+To speed up the unshred process, several measures can be employed.
+1. Low resolution (limit is that human can disinguish the difference).
+2. Make the image gray.
+3. Smart choose the two status based on the similirity of their edge distribution (by using the KL divergency)
+
+## Unfinished
+Try to solve the edge problems.
+
 
