@@ -49,7 +49,7 @@ To speed up the unshred process, several measures can be employed.
 2. Make the image gray.
 3. Smart choose the two status based on the similirity of their edge distribution (by using the KL divergency)
 
-## Unfinished
+## Future work
 Try to solve the edge problems.
 
 
