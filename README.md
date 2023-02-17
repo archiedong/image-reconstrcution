@@ -9,8 +9,10 @@ $\textbf{step 1}$ choose two patches with $p = \frac{1}{n}$, where $n$ is the to
 
 $\textbf{step 2}$ for $32$ possible rotations (including the current one), calculate $E_r = \sum_r e_i^\top e_i, r = 1, \ldots, 32$.
 
-$\textbf{step 3}$ choose $S^{th}$ proposal with $P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s) = \frac{E_s^{-1}}{\sum_{r = 1 \& r\neq c}^{32} E_r^{-1}}$.
-
+$\textbf{step 3}$ choose $S^{th}$ proposal with 
+```math
+P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s) = \frac{E_s^{-1}}{\sum_{r = 1 \& r\neq c}^{32} E_r^{-1}}.
+```
 $\textbf{step 4}$ MCMC algorithm, choose the proposal or not based on
 ```math
 $min\Big(1, \frac{P_r(\tilde{Z}_s \rightarrow \tilde{Z}_c)}{P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s)} \cdot \frac{\pi(\tilde{Z}_s|y)}{\pi(\tilde{Z}_c|y)}\Big)$
