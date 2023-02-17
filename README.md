@@ -33,8 +33,10 @@ After validation, the closest form of $\pi$ is the Gamma distribution. Then the 
 The pet image is shredded to $10 \times 5$ patches with edge fixed. The animation of reconstruction process is shown above.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/60518209/219530257-e6f7ffe3-8e26-4508-b62c-fe15f7ecb751.png" width="430" />
-  <img src="https://user-images.githubusercontent.com/60518209/219530272-8b965a5e-f570-413e-9461-dd9023ce9055.png" width="430" />
+  <img src="https://user-images.githubusercontent.com/60518209/219530257-e6f7ffe3-8e26-4508-b62c-fe15f7ecb751.png" width="470" />
+  <img src="https://user-images.githubusercontent.com/60518209/219530272-8b965a5e-f570-413e-9461-dd9023ce9055.png" width="470" />
 </p>
 
 The document is shredded to $8 \times 6$ patches with edge fixed. The results are shown above.
+
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzg5ZGFhZDlkYWU5YjRhMTk5MWVmNWUzMWEwMjEwZGUwOTU5YmFlNyZjdD1n/TfJxCpzru2RRF8sqO0/giphy.gif)
