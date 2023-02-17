@@ -36,4 +36,5 @@ The pet image is shredded to $10 \times 5$ patches with edge fixed. The animatio
   <img src="https://user-images.githubusercontent.com/60518209/219530257-e6f7ffe3-8e26-4508-b62c-fe15f7ecb751.png" width="430" />
   <img src="https://user-images.githubusercontent.com/60518209/219530272-8b965a5e-f570-413e-9461-dd9023ce9055.png" width="430" />
 </p>
+
 The document is shredded to $8 \times 6$ patches with edge fixed. The results are shown above.
