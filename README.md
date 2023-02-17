@@ -27,4 +27,6 @@ After validation, the closest form of $\pi$ is the Gamma distribution. Then the 
  
  $\textbf{step 6}$ After some burning time, if the status doesn't change or alomost stationary. Take it as the final ststus.
 
+## Experiments results
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZiMTU1Mjc3OWFiNjQxN2UxZDg3YjliYmNiNTNiMWRlOTdmMzg0NCZjdD1n/kU2Ji6KDfgz1BKVlxZ/giphy.gif)
 
