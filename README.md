@@ -17,7 +17,7 @@ $\textbf{step 4}$ MCMC algorithm, choose the proposal or not based on
 ```math
 $min\Big(1, \frac{P_r(\tilde{Z}_s \rightarrow \tilde{Z}_c)}{P_r(\tilde{Z}_c \rightarrow \tilde{Z}_s)} \cdot \frac{\pi(\tilde{Z}_s|y)}{\pi(\tilde{Z}_c|y)}\Big)$
 ```
-where $\pi(Z|y) = \frac{\pi(Z \cdot y)}{\pi(y)} = \frac{\pi(Z) \cdot \pi(y|Z) } {\pi(\by)}$.
+where $\pi(Z|y) = \frac{\pi(Z \cdot y)}{\pi(y)} = \frac{\pi(Z) \cdot \pi(y|Z) } {\pi(y)}$.
 After validation, the closest form of $\pi$ is the Gamma distribution. Then the MCMC algorithm becomes \small
 ```math
  {$$min\bigg(1, \frac{E_c^{-1} \cdot \sum_{r \neq c}^{32} E_r^{-1}} {E_s^{-1} \cdot \sum_{r \neq s}^{32} E_r^{-1}} \cdot \exp \Big(\sum \log(Gamma_{\alpha, \beta} (\be_i^2|\tilde{Z}_s)) - \sum \log(Gamma_{\alpha, \beta} (\be_i^2|\tilde{Z}_c)) \Big)  \bigg)
